@@ -4,7 +4,12 @@
 
 #include <iostream>
 
+//glolbal variables
+int a ,b = 5;
+
 int main(){
+    //local variable
+    bool myFlag;
     std::cout << "Hi There!" << std::endl;
     
     std::cout << std::endl << std::endl;
