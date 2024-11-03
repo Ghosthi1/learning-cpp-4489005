@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+//INOUT OUTPUT
 #include <fstream>
 
 int main(){
@@ -12,14 +13,18 @@ int main(){
     int number;
     char letter;
 
+    //open file
     inFile.open("people.txt");
+    //in file is to read
     if (inFile.fail())
         std::cout << std::endl << "File not found!" << std::endl;
     else{
-        while (!inFile.eof()){
+    //eof is end of file        
+    while (!inFile.eof()){
             getline(inFile, str);
             std::cout << str << std::endl;
         }
+        //rememeber to close file
         inFile.close();
     }
     
